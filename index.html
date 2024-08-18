@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AD ON SCREEN - Your Advertisement, Our Promotion</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>AD ON SCREEN</h1>
+        <p>Your Advertisement, Our Promotion</p>
+    </header>
+    <section id="our-identity">
+        <div class="identity-content">
+            <div class="identity-text">
+                <h2>Our Identity</h2>
+                <p>Founded in 2024, <strong>AD ON SCREEN</strong> is a small startup with a big mission: to help businesses get noticed. We set up screens in busy places like shopping malls, where your ads can reach a wide audience.</p>
+                <p>Managed by Sirpathi Gangesh, a Chartered Accountant, <strong>AD ON SCREEN</strong> makes advertising easy. With just a few clicks, your message can be displayed on our screens, helping your business connect with more people.</p>
+                <p>At <strong>AD ON SCREEN</strong>, we believe that advertising should be simple, effective, and help your business grow.</p>
+            </div>
+            <div class="identity-image">
+                <img src="images/ouridentity3.png" alt="Our Identity Image">
+            </div>
+        </div>
+    </section>
+    <!-- New Section "Our Capabilities" -->
+<section id="our-capabilities">
+    <div class="capabilities-content">
+        <div class="capabilities-image">
+            <img src="images/ourcaps3.png" alt="Our Capabilities Image">
+        </div>
+        <div class="capabilities-text">
+            <h2>Our Capabilities</h2>
+            <p>At <strong>AD ON SCREEN</strong>, we specialize in delivering dynamic and impactful digital advertising solutions. Our capabilities extend across a range of services designed to enhance visibility and engagement for your brand.</p>
+            <p>We have screens strategically placed in top locations, including malls, supermarkets, stores, and other crowded areas with high foot traffic. This prime placement ensures that your advertisements reach a broad and diverse audience.</p>
+            <p>From vibrant displays for special campaigns to consistent advertising presence, our advanced technology and strategic positioning maximize the impact of your messages. Discover how our expertise in digital advertising can elevate your brand and connect you with more customers.</p>
+        </div>
+    </div>
+</section>
+    
+    <section id="portfolio">
+        <div class="portfolio-section">
+            <h2 class="portfolio-title">Our Portfolio</h2>
+            <div class="portfolio-videos">
+                <div class="portfolio-item">
+                    <video src="videos/GB.mp4" autoplay loop muted></video>
+                </div>
+                <div class="portfolio-item">
+                    <video src="videos/GB@.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="bookappointment">
+        <h2>Book an Appointment</h2>
+        <button id="bookAppointmentBtn" class="book-now-btn">Book Now</button>
+
+
+        <div id="appointmentForm" style="display: none;">
+            <form action="https://formspree.io/f/xanwbzjo" method="POST">
+                <input type="hidden" name="_next" value="https://sites.google.com/view/
+                adonscreen">
+                <input type="hidden" name="_subject" value="New Appointment Booking">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+            
+                <label for="businessName">Business Name:</label>
+                <input type="text" id="businessName" name="businessName" required><br><br>
+            
+                <label for="contactNumber">Contact Number:</label>
+                <div style="display: flex; align-items: center;">
+                    <select id="countryCode" name="countryCode" required>
+                        <option value="+91" selected>+91 (India)</option>
+                        <option value="+1">+1 (USA)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+61">+61 (Australia)</option>
+                        <option value="+81">+81 (Japan)</option>
+                        <option value="+33">+33 (France)</option>
+                        <option value="+49">+49 (Germany)</option>
+                        <option value="+39">+39 (Italy)</option>
+                        <option value="+34">+34 (Spain)</option>
+                        <option value="+55">+55 (Brazil)</option>
+                        <option value="+27">+27 (South Africa)</option>
+                        <option value="+86">+86 (China)</option>
+                        <option value="+82">+82 (South Korea)</option>
+                        <option value="+91">+91 (India)</option>
+                        <option value="+20">+20 (Egypt)</option>
+                        <option value="+91">+91 (India)</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="tel" id="contactNumber" name="contactNumber" required style="margin-left: 10px;">
+                </div><br><br>
+            
+                <label for="appointmentDate">Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required><br><br>
+            
+                <label for="appointmentTime">Time:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required><br><br>
+            
+                <button type="submit">Submit</button>
+            </form>
+    </section>
+
+    <section id="map-location" style="padding: 20px;">
+        <h2>Our Location</h2>
+        <div style="width: 100%; height: 400px;">
+            <!-- Replace the src attribute value with your Google Maps embed code -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231.07883619717705!2d78.4441086711466!3d17.445546096916825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c3aea363eb%3A0xa44d9677ba3ab8cd!2s7-1-308%2FA%2F7%2F7A%2C%20Vengal%20Rao%20Nagar%2C%20Sanjeeva%20Reddy%20Nagar%2C%20Hyderabad%2C%20Telangana%20500038!5e1!3m2!1sen!2sin!4v1723991876141!5m2!1sen!2sin"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    
+    <section id="contact-us">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div style="flex: 1; padding-right: 20px;">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-user"></i> Chief Executive Officer(CEO): Sirpathi Gangesh</p>
+                <p><i class="fas fa-phone-alt"></i> Contact Number: +91 9552367043</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 7-1-308/A/25, Beside Orient Tea Stall, SR Nagar, Hyderabad, 500038</p>
+            </div>
+    
+            <div style="flex: 1; padding-left: 20px;">
+                <h2>Our Presence</h2>
+                <ul>
+                    <li>SR Nagar</li>
+                    <li>Ameerpet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <script>
+        document.getElementById("bookAppointmentBtn").addEventListener("click", function() {
+            var form = document.getElementById("appointmentForm");
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 AD ON SCREEN. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
