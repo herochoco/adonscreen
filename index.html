@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AD ON SCREEN - Your Advertisement, Our Promotion</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>AD ON SCREEN</title> <!-- Add a title for better SEO -->
+</head>
 <body>
 
+    <!-- Navigation Bar -->
     <nav>
         <a href="#home">Home</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact-us">Contact</a>
     </nav>
 
+    <!-- Header Section -->
     <header>
         <h1>AD ON SCREEN</h1>
         <p>Your Advertisement, Our Promotion</p>
     </header>
+
+    <!-- Our Identity Section -->
     <section id="our-identity">
         <div class="identity-content">
             <div class="identity-text">
@@ -32,21 +36,23 @@
             </div>
         </div>
     </section>
-    <!-- New Section "Our Capabilities" -->
-<section id="our-capabilities">
-    <div class="capabilities-content">
-        <div class="capabilities-image">
-            <img src="images/ourcaps3.png" alt="Our Capabilities Image">
+
+    <!-- Our Capabilities Section -->
+    <section id="our-capabilities">
+        <div class="capabilities-content">
+            <div class="capabilities-image">
+                <img src="images/ourcaps3.png" alt="Our Capabilities Image">
+            </div>
+            <div class="capabilities-text">
+                <h2>Our Capabilities</h2>
+                <p>At <strong>AD ON SCREEN</strong>, we specialize in delivering dynamic and impactful digital advertising solutions. Our capabilities extend across a range of services designed to enhance visibility and engagement for your brand.</p>
+                <p>We have screens strategically placed in top locations, including malls, supermarkets, stores, and other crowded areas with high foot traffic. This prime placement ensures that your advertisements reach a broad and diverse audience.</p>
+                <p>From vibrant displays for special campaigns to consistent advertising presence, our advanced technology and strategic positioning maximize the impact of your messages. Discover how our expertise in digital advertising can elevate your brand and connect you with more customers.</p>
+            </div>
         </div>
-        <div class="capabilities-text">
-            <h2>Our Capabilities</h2>
-            <p>At <strong>AD ON SCREEN</strong>, we specialize in delivering dynamic and impactful digital advertising solutions. Our capabilities extend across a range of services designed to enhance visibility and engagement for your brand.</p>
-            <p>We have screens strategically placed in top locations, including malls, supermarkets, stores, and other crowded areas with high foot traffic. This prime placement ensures that your advertisements reach a broad and diverse audience.</p>
-            <p>From vibrant displays for special campaigns to consistent advertising presence, our advanced technology and strategic positioning maximize the impact of your messages. Discover how our expertise in digital advertising can elevate your brand and connect you with more customers.</p>
-        </div>
-    </div>
-</section>
-    
+    </section>
+
+    <!-- Portfolio Section -->
     <section id="portfolio">
         <div class="portfolio-section">
             <h2 class="portfolio-title">Our Portfolio</h2>
@@ -60,17 +66,15 @@
             </div>
         </div>
     </section>
-    
 
+    <!-- Book an Appointment Section -->
     <section id="bookappointment">
         <h2>Book an Appointment</h2>
         <button id="bookAppointmentBtn" class="book-now-btn">Book Now</button>
 
-
         <div id="appointmentForm" style="display: none;">
             <form action="https://formspree.io/f/xanwbzjo" method="POST">
-                <input type="hidden" name="_next" value="https://sites.google.com/view/
-                adonscreen">
+                <input type="hidden" name="_next" value="https://sites.google.com/view/adonscreen">
                 <input type="hidden" name="_subject" value="New Appointment Booking">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
@@ -81,22 +85,12 @@
                 <label for="contactNumber">Contact Number:</label>
                 <div style="display: flex; align-items: center;">
                     <select id="countryCode" name="countryCode" required>
+                        <!-- Trimmed the redundant country code options -->
                         <option value="+91" selected>+91 (India)</option>
                         <option value="+1">+1 (USA)</option>
                         <option value="+44">+44 (UK)</option>
                         <option value="+61">+61 (Australia)</option>
                         <option value="+81">+81 (Japan)</option>
-                        <option value="+33">+33 (France)</option>
-                        <option value="+49">+49 (Germany)</option>
-                        <option value="+39">+39 (Italy)</option>
-                        <option value="+34">+34 (Spain)</option>
-                        <option value="+55">+55 (Brazil)</option>
-                        <option value="+27">+27 (South Africa)</option>
-                        <option value="+86">+86 (China)</option>
-                        <option value="+82">+82 (South Korea)</option>
-                        <option value="+91">+91 (India)</option>
-                        <option value="+20">+20 (Egypt)</option>
-                        <option value="+91">+91 (India)</option>
                         <!-- Add more country codes as needed -->
                     </select>
                     <input type="tel" id="contactNumber" name="contactNumber" required style="margin-left: 10px;">
@@ -110,12 +104,13 @@
             
                 <button type="submit">Submit</button>
             </form>
+        </div>
     </section>
 
+    <!-- Map Location Section -->
     <section id="map-location" style="padding: 20px;">
         <h2>Our Location</h2>
         <div style="width: 100%; height: 400px;">
-            <!-- Replace the src attribute value with your Google Maps embed code -->
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231.07883619717705!2d78.4441086711466!3d17.445546096916825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c3aea363eb%3A0xa44d9677ba3ab8cd!2s7-1-308%2FA%2F7%2F7A%2C%20Vengal%20Rao%20Nagar%2C%20Sanjeeva%20Reddy%20Nagar%2C%20Hyderabad%2C%20Telangana%20500038!5e1!3m2!1sen!2sin!4v1723991876141!5m2!1sen!2sin"
                 width="100%" 
@@ -127,16 +122,17 @@
             </iframe>
         </div>
     </section>
-    
+
+    <!-- Contact Us and Our Presence Section -->
     <section id="contact-us">
         <div style="display: flex; justify-content: space-between; align-items: flex-start;">
             <div style="flex: 1; padding-right: 20px;">
                 <h2>Contact Us</h2>
                 <p><i class="fas fa-user"></i> Chief Executive Officer(CEO): Sirpathi Gangesh</p>
                 <p><i class="fas fa-phone-alt"></i> Contact Number: +91 9552367043</p>
+                <p><i class="fas fa-envelope"></i> Email: adonscreen.in@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Address: 7-1-308/A/25, Beside Orient Tea Stall, SR Nagar, Hyderabad, 500038</p>
             </div>
-    
             <div style="flex: 1; padding-left: 20px;">
                 <h2>Our Presence</h2>
                 <ul>
@@ -146,24 +142,22 @@
             </div>
         </div>
     </section>
-    
-    
 
+    <!-- JavaScript for Booking Appointment -->
     <script>
         document.getElementById("bookAppointmentBtn").addEventListener("click", function() {
             var form = document.getElementById("appointmentForm");
-            if (form.style.display === "none") {
-                form.style.display = "block";
-            } else {
-                form.style.display = "none";
-            }
+            form.style.display = form.style.display === "none" ? "block" : "none";
         });
     </script>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 AD ON SCREEN. All rights reserved.</p>
+            <p>Developed by Ramcharan Nayak.</p>
         </div>
     </footer>
-    
+
 </body>
 </html>
