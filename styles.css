@@ -1,339 +1,230 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    line-height: 1.6;
     color: #333;
 }
 
-nav {
-    background: #333;
-    color: #fff;
-    padding: 10px;
+header {
+    background-image: url('images/gbrologo.jpg'); /* Use your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the image stays fixed */
+    color: #000;
+    padding: 100px 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px 0;
 }
 
 nav a {
     color: #fff;
-    margin: 0 15px;
+    padding: 10px 20px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-header {
-    background: url('images/Gbrologo.jpg') no-repeat center center fixed; /* Fixed position */
-    background-size: cover; /* Ensure the image covers the entire header area */
-    color: #000000;
-    padding: 100px 0; /* Adjust padding to ensure space for text */
-    text-align: center;
-    position: relative; /* Allows positioning of text over the image */
-    height: 200px; /* Adjust the height as needed */
+nav a:hover {
+    background: #555;
 }
 
-header h1 {
-    margin: 2;
-    font-size: 2.5em;
+/* Our Identity Section */
+#our-identity, #our-capabilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-header p {
-    margin: 0;
-    font-size: 1.5em;
+#our-identity .identity-content, 
+#our-capabilities .capabilities-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+#our-identity .identity-text, 
+#our-capabilities .capabilities-text {
+    flex: 1;
+    padding-right: 20px;
 }
 
+#our-identity .identity-image, 
+#our-capabilities .capabilities-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+#our-identity img, 
+#our-capabilities img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Portfolio Section */
 #portfolio {
-    text-align: center; /* Center align the videos */
-    color: chocolate; /* Title color can be changed */
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
 }
 
-.portfolio-section {
-    position: relative; /* Position relative to adjust title position */
-}
-
-.portfolio-title {
-    font-weight: bold; /* Make the title bold */
-    color: #333; /* Change color to your preference */
-    margin-bottom: 20px; /* Space between title and videos */
-    text-align: left; /* Align the title to the left */
-    position: absolute; /* Absolute positioning for independent placement */
-    left: 0; /* Align title to the left edge */
-    top: 2; /* Adjust as needed to place title above videos */
-    font-size: 2em; /* Increase font size (adjust the value as needed) */
-}
-
-.portfolio-videos {
-    margin-left: 0; /* Ensure videos are not affected by title's position */
-    text-align: center; /* Center align videos */
-}
-
-.portfolio-item {
-    display: inline-block;
-    margin: 10px;
-}
-
-.portfolio-item video {
-    width: 600px;
-    height: 500px;
-    border-radius: 5px;
-}
-
-
-form {
-    max-width: 400px;
+#portfolio .portfolio-section {
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: left;
+}
+
+#portfolio .portfolio-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#portfolio .portfolio-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#portfolio .portfolio-item {
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+#portfolio video {
+    width: 100%;
+    height: auto;
+}
+
+/* Book an Appointment Section */
+#bookappointment {
+    padding: 40px 20px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.book-now-btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.book-now-btn:hover {
+    background: #555;
+}
+
+#appointmentForm {
+    margin-top: 20px;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
-form input,
-form select {
+form input, form select {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-form button {
-    background-color: #4CAF50; /* Changed background color */
+form button[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    color: white;
-    padding: 12px 20px; /* Increased padding */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px; /* Increased font size */
-    margin: 10px 0;
     cursor: pointer;
-    border-radius: 5px; /* Increased border radius */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
 }
 
-form button:hover {
-    background-color: #45a049; /* Changed hover color */
-    transform: scale(1.05); /* Added scale effect */
+form button[type="submit"]:hover {
+    background: #555;
 }
 
-#appointmentForm {
-    display: none;
-}
-
-#contact {
-    text-align: center;
-}
-
-#contact h2 {
-    margin: 0;
-    font-size: 2em;
-}
-
-#contact p {
-    margin: 5px 0;
-}
-/* Style specifically for "Book Now" button */
-.book-now-btn {
-    background-color: #00aaff; /* Blue background */
-    border: 2px solid #000000; /* Dark or black border */
-    color: white;
-    padding: 12px 24px; /* Larger padding */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px; /* Adjust font size */
-    margin: 15px 0; /* Adjust margin */
-    cursor: pointer;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Added scale effect */
-}
-
-.book-now-btn:hover {
-    background-color: #218838; /* Darker green on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
-}
-#our-identity {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
+/* Map Location Section */
+#map-location {
     padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+    background: #f4f4f4;
 }
 
-.identity-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.identity-text {
-    flex: 1;
-    padding-right: 20px; /* Space between text and image */
-}
-
-.identity-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.identity-text p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.identity-text strong {
-    color: #4CAF50; /* Green color to match your header */
-    font-weight: bold;
-}
-
-.identity-image {
-    flex: 1;
-}
-
-.identity-image img {
-    width: 100%; /* Make sure the image fits the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px;
-}
-
-#bookappointment {
-    text-align: center;
-}
-
-#bookappointment h2 {
-    margin: 0;
-    font-size: 2em;
-}
-
-#bookappointment p {
-    margin: 5px 0;
+/* Contact Us and Our Presence Section */
+#contact-us {
+    padding: 40px 20px;
+    background: #f8f8f8;
 }
 
 #contact-us h2 {
-    margin: 0; /* Distance between the items of CU & OP Sections */
-    font-size: 2em;
-    color: #000000; /* Replace this hex code with any of the suggested colors */
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 #contact-us p {
-    margin: 5px 0; /* Changes distance btwn the items in the Contact us section */
+    margin-bottom: 10px;
 }
 
-#contact-us > div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 300px; /* Adjust spacing between CU & OP sections */
+#contact-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-#contact-us > div > div {
-    flex: 1;
-    padding: 0 150px; /* Add padding to ensure space between sections */
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+footer p {
     margin: 0;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #our-identity, #our-capabilities {
+        flex-direction: column;
+        text-align: center;
+    }
 
-#our-capabilities {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-}
+    #our-identity .identity-text, 
+    #our-capabilities .capabilities-text {
+        padding: 0;
+    }
 
-.capabilities-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
+    #our-identity .identity-image, 
+    #our-capabilities .capabilities-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 
-.capabilities-text {
-    flex: 1;
-    padding-left: 20px; /* Space between text and image */
-}
+    #portfolio .portfolio-videos {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.capabilities-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.capabilities-text p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.capabilities-text strong {
-    color: #4CAF50; /* Highlight color matching your brand */
-    font-weight: bold;
-}
-
-.capabilities-image {
-    flex: 1;
-}
-
-.capabilities-image img {
-    width: 100%; /* Make sure the image fits the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px;
-}
-
-
-footer {
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
-    text-align: center; /* Center the text */
-    padding: 1px ; /* Padding for the footer */
-    position: fixed; /* Keep the footer at the bottom */
-    width: 100%; /* Full width */
-    bottom: 0; /* Align to the bottom */
-}
-
-.footer-content {
-    font-size: 13px; /* Font size */
-}
-
-footer a {
-    color: #ffcc00; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-#map-location {
-    text-align: center;
-    background-color: #f9f9f9;
-    margin: 40px 0;
-}
-
-#map-location h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-style:bold ;
+    #portfolio .portfolio-item {
+        max-width: 100%;
+    }
 }
