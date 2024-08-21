@@ -26,7 +26,7 @@ nav a {
 /* Header */
 header {
     text-align: center;
-    padding: 20px;
+    padding: 8px;
     background-image: url('images/COFFEESHOPRENEW.jpg'); /* Use a mobile-specific header image */
     background-size: cover;
     background-position: center;
